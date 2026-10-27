@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Builder Pro"
+  short_description: "Build polished websites from focused design references"
+  default_prompt: "Use $web-builder-pro to design and build this website."

@@ -1,0 +1,1292 @@
+{
+  "schema": 3,
+  "redactions": [
+    "ruta personal del equipo origen sustituida por %USERPROFILE% / $HOME; los archivos marcados llevan 'redacted' en su entrada"
+  ],
+  "line_endings": "todos los archivos de texto normalizados a LF; los originales en la maquina fuente mezclado CRLF/LF",
+  "skill_count": 29,
+  "text_file_count": 182,
+  "skills": {
+    "01-frontend-design": {
+      "frontmatter_name": "frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, or applications. Generates creative, polished code that avoids generic AI aesthetics. license: Complete terms in LICENSE.txt",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "SKILL.md": {
+          "bytes": 5203,
+          "sha256": "0dbfd907831811ea",
+          "text": true
+        }
+      },
+      "divergent_origins": [
+        "claude"
+      ],
+      "redacted": []
+    },
+    "02-responsive-design": {
+      "frontmatter_name": "responsive-design",
+      "description": "> Responsive web design sub-skill. Provides mobile-first layout patterns, CSS Grid/Flexbox strategies, responsive images, fluid typography, container queries, and breakpoint systems. Pull this in whenever building or reviewing UI that must work across mobile, tablet, desktop, and large screens. Triggers on: \"make it responsive\", \"responsive design\", \"mobile-first\", \"breakpoints\", \"fluid layout\", o",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "SKILL.md": {
+          "bytes": 9393,
+          "sha256": "41b1b3a91115c778",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "03-web-design-guidelines": {
+      "frontmatter_name": "web-design-guidelines",
+      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\". metadata: author: vercel version: \"1.0.0\" argument-hint: <file-or-pattern>",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "SKILL.md": {
+          "bytes": 1231,
+          "sha256": "f4647ca866a3accf",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "04-theme-factory": {
+      "frontmatter_name": "theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly. license: Complete terms in LICENSE.txt",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "design-md/arctic-frost.md": {
+          "bytes": 6343,
+          "sha256": "b225d7ed26e86ec4",
+          "text": true
+        },
+        "design-md/botanical-garden.md": {
+          "bytes": 6418,
+          "sha256": "48468179b24ee9ba",
+          "text": true
+        },
+        "design-md/desert-rose.md": {
+          "bytes": 6345,
+          "sha256": "59d843c0481e5928",
+          "text": true
+        },
+        "design-md/forest-canopy.md": {
+          "bytes": 6304,
+          "sha256": "f5007c64b82ebf62",
+          "text": true
+        },
+        "design-md/golden-hour.md": {
+          "bytes": 6399,
+          "sha256": "1370fbe72614769c",
+          "text": true
+        },
+        "design-md/midnight-galaxy.md": {
+          "bytes": 6973,
+          "sha256": "6fa243472cca291f",
+          "text": true
+        },
+        "design-md/modern-minimalist.md": {
+          "bytes": 6163,
+          "sha256": "046ff0d1a860df9e",
+          "text": true
+        },
+        "design-md/ocean-depths.md": {
+          "bytes": 6073,
+          "sha256": "1c1b35cfe8d740e5",
+          "text": true
+        },
+        "design-md/sunset-boulevard.md": {
+          "bytes": 6393,
+          "sha256": "ec5f5be8c43e7fae",
+          "text": true
+        },
+        "design-md/tech-innovation.md": {
+          "bytes": 6808,
+          "sha256": "62440fbdacbffcc8",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 4317,
+          "sha256": "d57b2a2e80737fdc",
+          "text": true
+        },
+        "themes/arctic-frost.md": {
+          "bytes": 544,
+          "sha256": "868a75a8fb5b2a61",
+          "text": true
+        },
+        "themes/botanical-garden.md": {
+          "bytes": 519,
+          "sha256": "222cb8e7496abc9b",
+          "text": true
+        },
+        "themes/desert-rose.md": {
+          "bytes": 496,
+          "sha256": "bd065b8629be3b64",
+          "text": true
+        },
+        "themes/forest-canopy.md": {
+          "bytes": 506,
+          "sha256": "ecb722efa24688e8",
+          "text": true
+        },
+        "themes/golden-hour.md": {
+          "bytes": 528,
+          "sha256": "3444a00df971d3c2",
+          "text": true
+        },
+        "themes/midnight-galaxy.md": {
+          "bytes": 513,
+          "sha256": "0e134c4c0324df41",
+          "text": true
+        },
+        "themes/modern-minimalist.md": {
+          "bytes": 549,
+          "sha256": "b8bc572b75948d4d",
+          "text": true
+        },
+        "themes/ocean-depths.md": {
+          "bytes": 555,
+          "sha256": "a7ad8eec85341dbf",
+          "text": true
+        },
+        "themes/sunset-boulevard.md": {
+          "bytes": 558,
+          "sha256": "658af11ab04be492",
+          "text": true
+        },
+        "themes/tech-innovation.md": {
+          "bytes": 547,
+          "sha256": "183648163026dd5e",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "05-website-rebuild": {
+      "frontmatter_name": "website-rebuild",
+      "description": "> Full website rebuild agent. Takes an existing website URL and rebuilds it from scratch into a world-class, SEO-optimized, WCAG AA accessible, visually stunning website using Astro + Tailwind CSS, deployed to Vercel via GitHub. Executes a rigorous 14-phase process: brand extraction, content scraping, SEO audit, design audit, rebuild planning, full build with design system, copy optimization, 3 QA",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "references/accessibility-spec.md": {
+          "bytes": 4117,
+          "sha256": "bb3ed2871e9adf43",
+          "text": true
+        },
+        "references/design-rules.md": {
+          "bytes": 4337,
+          "sha256": "32db1c0e37a21a97",
+          "text": true
+        },
+        "references/nano-banana.md": {
+          "bytes": 1442,
+          "sha256": "2b3dc2d6ee912f07",
+          "text": true
+        },
+        "references/phase-details.md": {
+          "bytes": 17473,
+          "sha256": "e17a9c5b05b80638",
+          "text": true
+        },
+        "scripts/contrast-check.js": {
+          "bytes": 4609,
+          "sha256": "aff7803dbc86f9d7",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 18541,
+          "sha256": "d88b85b1675a504a",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "06-local-business-rebuild": {
+      "frontmatter_name": "local-business-rebuild",
+      "description": "> Build a stunning new website for a local business prospect. Adapted from the full website-rebuild skill but optimized for speculative local business pitches. 10-phase process: brand extraction, SEO audit, design audit, rebuild plan, full build with design system, copy optimization, combined QA, pre-deploy checklist, and output to monorepo. Uses scraped content from prospect-scrape as input. No t",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "references/accessibility-spec.md": {
+          "bytes": 4117,
+          "sha256": "bb3ed2871e9adf43",
+          "text": true
+        },
+        "references/design-rules.md": {
+          "bytes": 4337,
+          "sha256": "32db1c0e37a21a97",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 27899,
+          "sha256": "aaa8dfd26c63762e",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "07-azerbaijan-website-build": {
+      "frontmatter_name": "azerbaijan-website-build",
+      "description": "Build premium tri-lingual websites from scratch for Azerbaijani businesses. Handles data gathering (website scrape, social media, or interview), brand development, and full Astro + Tailwind build with AZ/RU/EN language support. triggers: - azerbaijan - az website - baku - azerbaijani",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "references/accessibility-spec.md": {
+          "bytes": 4117,
+          "sha256": "bb3ed2871e9adf43",
+          "text": true
+        },
+        "references/azerbaijani-design-guide.md": {
+          "bytes": 11877,
+          "sha256": "9f9922736a107152",
+          "text": true
+        },
+        "references/design-rules.md": {
+          "bytes": 7971,
+          "sha256": "0c39cbe91b74a2a9",
+          "text": true
+        },
+        "references/i18n-spec.md": {
+          "bytes": 29567,
+          "sha256": "2f6a3ad1218676d8",
+          "text": true
+        },
+        "references/interview-questionnaire.md": {
+          "bytes": 19621,
+          "sha256": "19e64f4528058c26",
+          "text": true
+        },
+        "references/nano-banana-logo.md": {
+          "bytes": 13705,
+          "sha256": "0d2c05303109e4a0",
+          "text": true
+        },
+        "scripts/contrast-check.js": {
+          "bytes": 4609,
+          "sha256": "aff7803dbc86f9d7",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 29186,
+          "sha256": "03d0da999bc25a4f",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "08-design-system-generator": {
+      "frontmatter_name": "design-system-generator",
+      "description": "Generate a structured DESIGN.md file for any business or project. Produces a machine-readable design system specification that build pipelines consume during code generation. Based on VoltAgent/awesome-design-md format. triggers: - generate design system - create DESIGN.md - design system from scratch - design specification",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "SKILL.md": {
+          "bytes": 18808,
+          "sha256": "723a5e87169b9383",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "agent-reach": {
+      "frontmatter_name": "agent-reach",
+      "description": "> MUST USE when user wants to 调研/research/搜索/search/查/找/look up anything on the internet — e.g. 全网调研 X / 帮我调研一下 X / 查一下 X / 搜搜 X / 看看大家怎么评价 X / X 上有什么讨论 / research this topic。 Also MUST USE when user mentions any platform or shares any URL/链接: 小红书/xiaohongshu/xhs, Twitter/推特/X, B站/bilibili, Reddit, Facebook, Instagram, V2EX, LinkedIn/领英/Boss直聘/招聘/求职/jobs, YouTube, GitHub code search, 小宇宙播客, 雪球/股票行",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "references/career.md": {
+          "bytes": 9249,
+          "sha256": "ade444ac499e55f0",
+          "text": true
+        },
+        "references/dev.md": {
+          "bytes": 1383,
+          "sha256": "f6f91107557eacf1",
+          "text": true
+        },
+        "references/finance.md": {
+          "bytes": 1474,
+          "sha256": "c0cf89af1119d818",
+          "text": true
+        },
+        "references/search.md": {
+          "bytes": 1066,
+          "sha256": "23bfc54a3b85847a",
+          "text": true
+        },
+        "references/social.md": {
+          "bytes": 10521,
+          "sha256": "e2e6451eb931effd",
+          "text": true
+        },
+        "references/video.md": {
+          "bytes": 5515,
+          "sha256": "167ce732382c664e",
+          "text": true
+        },
+        "references/web.md": {
+          "bytes": 1087,
+          "sha256": "b238fc897975a693",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 8780,
+          "sha256": "eff66a9ddd717aa9",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "antislop-decks": {
+      "frontmatter_name": "antislop-decks",
+      "description": "Use when designing or reviewing any presentation (pptx, Google Slides, HTML/reveal) so it does NOT look AI-generated. A bias-correction engine for decks: kills bullet soup with an assertion-evidence structure, sets DENSITY/MOTION/VARIANCE dials, bans the tells of a generated deck, requires one signature element, and generates a DECK.md per project. Pairs with antislop-web for shared visual discipl",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "SKILL.md": {
+          "bytes": 14158,
+          "sha256": "e0670ba887a0745d",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "antislop-docs": {
+      "frontmatter_name": "antislop-docs",
+      "description": "Use when writing or reviewing any document (docx, Google Docs, PDF, report, proposal, memo) so it does NOT read or look AI-generated. A bias-correction engine for documents: kills the ChatGPT-essay shape with BLUF/pyramid structure, prunes bold-bombing and connector cliches, sets the prose-vs-list discipline, defines real editorial typography, requires one signature element, and generates a DOC.md",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "SKILL.md": {
+          "bytes": 13071,
+          "sha256": "82450cb2c793b4a2",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "antislop-web": {
+      "frontmatter_name": "antislop-web",
+      "description": "Use when building or reviewing any web UI so it does NOT look AI-generated. A bias-correction engine: bans the AI tells (Inter, neon purple, pure black, three identical cards, 'Elevate/Seamless', John Doe), sets VARIANCE/MOTION/DENSITY dials, forces required states (loading/empty/error) and performance guardrails, and requires one signature element. Generates a DESIGN.md source of truth per projec",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "SKILL.md": {
+          "bytes": 13227,
+          "sha256": "0739ffcc74548940",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "frontend-design": {
+      "frontmatter_name": "frontend-design",
+      "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults. license: Complete terms in LICENSE.txt",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "SKILL.md": {
+          "bytes": 8260,
+          "sha256": "1608ea77fbb6fc30",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "playwright-cli": {
+      "frontmatter_name": "playwright-cli",
+      "description": "Automate browser interactions, test web pages and work with Playwright tests. allowed-tools: Bash(playwright-cli:*) Bash(npx playwright:*) Bash(npx --no-install playwright:*)",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "references/element-attributes.md": {
+          "bytes": 665,
+          "sha256": "bf19aa4671e0a50a",
+          "text": true
+        },
+        "references/playwright-tests.md": {
+          "bytes": 1690,
+          "sha256": "c5b0719fef2cfdff",
+          "text": true
+        },
+        "references/pr-attachments.md": {
+          "bytes": 2830,
+          "sha256": "24b118e74598be72",
+          "text": true
+        },
+        "references/request-mocking.md": {
+          "bytes": 2182,
+          "sha256": "54e801c9663fc2b6",
+          "text": true
+        },
+        "references/running-code.md": {
+          "bytes": 5913,
+          "sha256": "3029569ed6ddaeff",
+          "text": true
+        },
+        "references/session-management.md": {
+          "bytes": 5929,
+          "sha256": "a4f16271f95d3eec",
+          "text": true
+        },
+        "references/storage-state.md": {
+          "bytes": 5198,
+          "sha256": "9ac47f9ae4a1aedc",
+          "text": true
+        },
+        "references/test-generation.md": {
+          "bytes": 16070,
+          "sha256": "27ecb11ef647999b",
+          "text": true
+        },
+        "references/tracing.md": {
+          "bytes": 3456,
+          "sha256": "ef73e71bee792e34",
+          "text": true
+        },
+        "references/video-recording.md": {
+          "bytes": 9388,
+          "sha256": "1c800b897824cb54",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 15428,
+          "sha256": "9bba755285a4c9ad",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "ui-ux-pro-max": {
+      "frontmatter_name": "ui-ux-pro-max",
+      "description": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data: 79 searchable styles (50 active), 192 product palettes and reasoning profiles, ",
+      "origins": [
+        "qoder",
+        "claude"
+      ],
+      "canonical_origin": "qoder",
+      "files": {
+        "data/app-interface.csv": {
+          "bytes": 11046,
+          "sha256": "331e7cf2c0b222d8",
+          "text": true
+        },
+        "data/catalog-summary.json": {
+          "bytes": 2392,
+          "sha256": "6638da97231c07fb",
+          "text": true
+        },
+        "data/charts.csv": {
+          "bytes": 23365,
+          "sha256": "4115cf1120680f2c",
+          "text": true
+        },
+        "data/colors.csv": {
+          "bytes": 37940,
+          "sha256": "8162429222bce22d",
+          "text": true
+        },
+        "data/data-provenance.json": {
+          "bytes": 36686,
+          "sha256": "e82fb33ed49375a3",
+          "text": true
+        },
+        "data/google-font-licenses.json": {
+          "bytes": 433127,
+          "sha256": "35688523f2955795",
+          "text": true
+        },
+        "data/google-fonts.csv": {
+          "bytes": 747241,
+          "sha256": "1c8c3b2ea1faf6a1",
+          "text": true
+        },
+        "data/icons.csv": {
+          "bytes": 57945,
+          "sha256": "50816c6012030178",
+          "text": true
+        },
+        "data/landing.csv": {
+          "bytes": 25449,
+          "sha256": "9a2edd3bb676c2a5",
+          "text": true
+        },
+        "data/motion.csv": {
+          "bytes": 14679,
+          "sha256": "381affe8df8ea1f6",
+          "text": true
+        },
+        "data/phosphor-icons-upstream.json": {
+          "bytes": 823933,
+          "sha256": "2399325233b277b5",
+          "text": true
+        },
+        "data/products.csv": {
+          "bytes": 75623,
+          "sha256": "42473f75e8dde598",
+          "text": true
+        },
+        "data/react-performance.csv": {
+          "bytes": 15080,
+          "sha256": "3d925802539abac5",
+          "text": true
+        },
+        "data/stacks/angular.csv": {
+          "bytes": 19863,
+          "sha256": "704be83f2bad30c7",
+          "text": true
+        },
+        "data/stacks/astro.csv": {
+          "bytes": 14591,
+          "sha256": "2c2f55fadaafc05e",
+          "text": true
+        },
+        "data/stacks/avalonia.csv": {
+          "bytes": 27327,
+          "sha256": "442fca14675a0206",
+          "text": true
+        },
+        "data/stacks/flutter.csv": {
+          "bytes": 14192,
+          "sha256": "64dba0ac17349f28",
+          "text": true
+        },
+        "data/stacks/html-tailwind.csv": {
+          "bytes": 16551,
+          "sha256": "d05a581d20af57b8",
+          "text": true
+        },
+        "data/stacks/javafx.csv": {
+          "bytes": 33577,
+          "sha256": "2e819b8d5abdd23a",
+          "text": true
+        },
+        "data/stacks/jetpack-compose.csv": {
+          "bytes": 12295,
+          "sha256": "699de218b286948e",
+          "text": true
+        },
+        "data/stacks/laravel.csv": {
+          "bytes": 20163,
+          "sha256": "854ea4daa5fc6129",
+          "text": true
+        },
+        "data/stacks/nextjs.csv": {
+          "bytes": 18687,
+          "sha256": "ecd2c27b2ea0127d",
+          "text": true
+        },
+        "data/stacks/nuxt-ui.csv": {
+          "bytes": 28700,
+          "sha256": "fce682a338cfcdbf",
+          "text": true
+        },
+        "data/stacks/nuxtjs.csv": {
+          "bytes": 23014,
+          "sha256": "3d9b54ed2d151bd9",
+          "text": true
+        },
+        "data/stacks/react-native.csv": {
+          "bytes": 14049,
+          "sha256": "ba31dd9c0c04da6b",
+          "text": true
+        },
+        "data/stacks/react.csv": {
+          "bytes": 21166,
+          "sha256": "4dd176a9787e5c63",
+          "text": true
+        },
+        "data/stacks/shadcn.csv": {
+          "bytes": 23184,
+          "sha256": "e56cfde5b7490783",
+          "text": true
+        },
+        "data/stacks/svelte.csv": {
+          "bytes": 15078,
+          "sha256": "f6e379ba802941ba",
+          "text": true
+        },
+        "data/stacks/swiftui.csv": {
+          "bytes": 15323,
+          "sha256": "bdd9231ff3ad658f",
+          "text": true
+        },
+        "data/stacks/threejs.csv": {
+          "bytes": 46769,
+          "sha256": "155d583b9c64da0d",
+          "text": true
+        },
+        "data/stacks/uno.csv": {
+          "bytes": 30091,
+          "sha256": "a0474363e4225b53",
+          "text": true
+        },
+        "data/stacks/uwp.csv": {
+          "bytes": 24692,
+          "sha256": "c409f08c1fbba1f1",
+          "text": true
+        },
+        "data/stacks/vue.csv": {
+          "bytes": 12813,
+          "sha256": "b655f1ebb9dff265",
+          "text": true
+        },
+        "data/stacks/winui.csv": {
+          "bytes": 27890,
+          "sha256": "e676dc1c13ee6c20",
+          "text": true
+        },
+        "data/stacks/wpf.csv": {
+          "bytes": 24158,
+          "sha256": "9781a9950b203336",
+          "text": true
+        },
+        "data/styles.csv": {
+          "bytes": 149478,
+          "sha256": "a93a4d9d70258565",
+          "text": true
+        },
+        "data/typography.csv": {
+          "bytes": 49997,
+          "sha256": "321fc446e8902448",
+          "text": true
+        },
+        "data/ui-reasoning.csv": {
+          "bytes": 77360,
+          "sha256": "f0774dd741cecdad",
+          "text": true
+        },
+        "data/ux-guidelines.csv": {
+          "bytes": 27516,
+          "sha256": "ff81ec613f70ba9f",
+          "text": true
+        },
+        "references/pro-rules.md": {
+          "bytes": 10909,
+          "sha256": "d28442d61c310b49",
+          "text": true
+        },
+        "references/quick-reference.md": {
+          "bytes": 24526,
+          "sha256": "0609bc7c89dacb40",
+          "text": true
+        },
+        "scripts/core.py": {
+          "bytes": 41236,
+          "sha256": "c3be4b23e7150e6b",
+          "text": true
+        },
+        "scripts/design_system.py": {
+          "bytes": 71537,
+          "sha256": "e7d1c94c4b2eada1",
+          "text": true
+        },
+        "scripts/reasoning_contract.py": {
+          "bytes": 5824,
+          "sha256": "b8bac1af82aa280d",
+          "text": true
+        },
+        "scripts/search.py": {
+          "bytes": 9373,
+          "sha256": "d54e648fe0ec2932",
+          "text": true
+        },
+        "scripts/tests/fixtures/catalogs/google-api.json": {
+          "bytes": 1079,
+          "sha256": "22d8dc81a7d6827b",
+          "text": true
+        },
+        "scripts/tests/fixtures/catalogs/google-catalog.json": {
+          "bytes": 1772,
+          "sha256": "c608ad5c4084ebc5",
+          "text": true
+        },
+        "scripts/tests/fixtures/catalogs/google-existing.csv": {
+          "bytes": 480,
+          "sha256": "4e0761b839dc6b21",
+          "text": true
+        },
+        "scripts/tests/fixtures/catalogs/google-metadata.json": {
+          "bytes": 328,
+          "sha256": "30bffc29ae348416",
+          "text": true
+        },
+        "scripts/tests/fixtures/catalogs/google-overrides.json": {
+          "bytes": 97,
+          "sha256": "6243a48a46199867",
+          "text": true
+        },
+        "scripts/tests/fixtures/catalogs/icons-curated.csv": {
+          "bytes": 495,
+          "sha256": "68362c9a700c13b9",
+          "text": true
+        },
+        "scripts/tests/fixtures/catalogs/phosphor-core.json": {
+          "bytes": 571,
+          "sha256": "ae4d0bb076240824",
+          "text": true
+        },
+        "scripts/tests/fixtures/catalogs/phosphor-package.json": {
+          "bytes": 370,
+          "sha256": "500588c757d6de03",
+          "text": true
+        },
+        "scripts/tests/fixtures/catalogs/phosphor-react-exports.json": {
+          "bytes": 87,
+          "sha256": "d79f2ee0afdbc2f8",
+          "text": true
+        },
+        "scripts/tests/fixtures/catalogs/phosphor-react-package.json": {
+          "bytes": 81,
+          "sha256": "1c57a1d76bcc0cdd",
+          "text": true
+        },
+        "scripts/tests/fixtures/relevance-baseline.json": {
+          "bytes": 89426,
+          "sha256": "0df200fc54c1cb97",
+          "text": true
+        },
+        "scripts/tests/fixtures/relevance-cases.json": {
+          "bytes": 36734,
+          "sha256": "e77d36eebbf6ddc2",
+          "text": true
+        },
+        "scripts/tests/fixtures/relevance-thresholds.json": {
+          "bytes": 5079,
+          "sha256": "1fbe8623fe3e49c8",
+          "text": true
+        },
+        "scripts/tests/test_catalog_refresh.py": {
+          "bytes": 19466,
+          "sha256": "3e2ca5d12702318f",
+          "text": true
+        },
+        "scripts/tests/test_catalog_summary_line_endings.py": {
+          "bytes": 2947,
+          "sha256": "fa6ff09f0ec2c990",
+          "text": true
+        },
+        "scripts/tests/test_core.py": {
+          "bytes": 16680,
+          "sha256": "3527fe2f4b852f69",
+          "text": true
+        },
+        "scripts/tests/test_core_data_quality.py": {
+          "bytes": 8954,
+          "sha256": "3ffc6b4905c9ea26",
+          "text": true
+        },
+        "scripts/tests/test_data_contracts.py": {
+          "bytes": 19513,
+          "sha256": "0360d6e10080c0bc",
+          "text": true
+        },
+        "scripts/tests/test_design_system_mode.py": {
+          "bytes": 9815,
+          "sha256": "95ad2c154349f702",
+          "text": true
+        },
+        "scripts/tests/test_design_system_stack.py": {
+          "bytes": 2261,
+          "sha256": "83d09ffe8cfbf7b2",
+          "text": true
+        },
+        "scripts/tests/test_native_desktop_stack_freshness.py": {
+          "bytes": 8375,
+          "sha256": "3942845712b9a829",
+          "text": true
+        },
+        "scripts/tests/test_relevance_evaluator.py": {
+          "bytes": 8430,
+          "sha256": "2fe56a4d6fe5fff1",
+          "text": true
+        },
+        "scripts/tests/test_skill_script_paths.py": {
+          "bytes": 4305,
+          "sha256": "7cec24b94be771bc",
+          "text": true
+        },
+        "scripts/tests/test_style_taxonomy.py": {
+          "bytes": 7425,
+          "sha256": "cd14d0092e8a454d",
+          "text": true
+        },
+        "scripts/tests/test_text_layout_resilience.py": {
+          "bytes": 5874,
+          "sha256": "b51d32ee8a15505b",
+          "text": true
+        },
+        "scripts/tests/test_web_stack_freshness.py": {
+          "bytes": 7701,
+          "sha256": "74897571398585f2",
+          "text": true
+        },
+        "scripts/validate_data.py": {
+          "bytes": 52230,
+          "sha256": "a599aa256049cf30",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 15958,
+          "sha256": "409f57edd5cfd6f9",
+          "text": true
+        }
+      },
+      "divergent_origins": [
+        "claude"
+      ],
+      "redacted": []
+    },
+    "animation-reference-curator": {
+      "frontmatter_name": "animation-reference-curator",
+      "description": "Find, inspect, rate, and select high-quality animation references for a specific page or app brief. Use when planning motion direction for React/web or Flutter, especially when comparing cinematic scroll, parallax, 3D, Rive, Lottie, or UI animation approaches. metadata: short-description: Curate and rate animation references",
+      "origins": [
+        "codex"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 124,
+          "sha256": "3eb761ac293f182f",
+          "text": true
+        },
+        "references/evaluation-and-handoff.md": {
+          "bytes": 4697,
+          "sha256": "641354bd78ef4f58",
+          "text": true
+        },
+        "references/gallery-sources.md": {
+          "bytes": 2320,
+          "sha256": "39cd7f1aade491aa",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 5492,
+          "sha256": "0af6a989356112ec",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "brand-visual-assets": {
+      "frontmatter_name": "brand-visual-assets",
+      "description": "Develop a coherent visual identity and create practical brand artwork and asset sets for stores, products, and campaigns. Use when defining a graphic line or producing logos, social artwork, packaging, product visuals, or reusable brand assets; use web-preview-generator for page and landing-page previews. metadata: short-description: Build brand visual systems and assets",
+      "origins": [
+        "codex"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "SKILL.md": {
+          "bytes": 14626,
+          "sha256": "10837511c47ef969",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "clean-user-facing-text": {
+      "frontmatter_name": "clean-user-facing-text",
+      "description": "Clean and finalize authorized natural-language text intended for readers by auditing suspicious invisible Unicode and rewriting prose while preserving facts and meaning. Use in Cursor when the user asks to clean, humanize, polish, or finalize articles, manuscripts, reports, documentation, emails, product copy, UI text, Markdown, or HTML prose, or when an installed Cursor Rule explicitly requires t",
+      "origins": [
+        "codex",
+        "cursor"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "references/responsible-use.md": {
+          "bytes": 536,
+          "sha256": "4704b413da87f988",
+          "text": true
+        },
+        "references/watermark-notes.md": {
+          "bytes": 1271,
+          "sha256": "d86af9a187834ecf",
+          "text": true
+        },
+        "scripts/clean_text.py": {
+          "bytes": 2787,
+          "sha256": "18984814317b6b2c",
+          "text": true
+        },
+        "scripts/common.py": {
+          "bytes": 5578,
+          "sha256": "abf0a9d64b39848f",
+          "text": true
+        },
+        "scripts/inspect_text.py": {
+          "bytes": 1608,
+          "sha256": "3aafc44112bbfb87",
+          "text": true
+        },
+        "scripts/text_unicode.py": {
+          "bytes": 21089,
+          "sha256": "cd21c5700184a6bb",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 4309,
+          "sha256": "2787e78b8332502d",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "gpt-taste": {
+      "frontmatter_name": "gpt-taste",
+      "description": "Elite UX/UI & Advanced GSAP Motion Engineer. Enforces Python-driven true randomization for layout variance, strict AIDA page structure, wide editorial typography (bans 6-line wraps), gapless bento grids, strict GSAP ScrollTriggers (pinning, stacking, scrubbing), inline micro-images, and massive section spacing.",
+      "origins": [
+        "codex"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "SKILL.md": {
+          "bytes": 7857,
+          "sha256": "2e64c269953f2656",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "image-to-code": {
+      "frontmatter_name": "image-to-code",
+      "description": "Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then implement the website to match them as closely as possible. In Codex, it must prefer large, readable, section-specific images instead of tiny compressed boards, generate fresh standalone images for sections or detail views instead of cropping o",
+      "origins": [
+        "codex"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "SKILL.md": {
+          "bytes": 38199,
+          "sha256": "1851ef644c15d832",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "image-to-code-assets": {
+      "frontmatter_name": "image-to-code-assets",
+      "description": "Analyze UI references component by component, identify and score image assets, reuse or generate faithful standalone assets, then package them for pixel-accurate implementation. Use with image-to-code for references containing imagery, mockups, mascots, photos, or illustrations; not for code-native UI alone. Verify which generation tools the current host actually exposes.",
+      "origins": [
+        "codex"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 127,
+          "sha256": "462cd47e176dee63",
+          "text": true
+        },
+        "README.md": {
+          "bytes": 4278,
+          "sha256": "075f1ad801baf3dc",
+          "text": true
+        },
+        "references/component-audit-and-handoff.md": {
+          "bytes": 6967,
+          "sha256": "dd4c3d19a1d9d625",
+          "text": true
+        },
+        "references/runtime-and-brand-preflight.md": {
+          "bytes": 5225,
+          "sha256": "d8c29e725e2facf9",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 8466,
+          "sha256": "61e804cddc7ffde8",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "remotion-video-pro": {
+      "frontmatter_name": "remotion-video-pro",
+      "description": "Plan, design, animate, edit, and render polished videos and app or brand mockups with Remotion and React. Combines premium art direction, anti-slop, frame-accurate motion, image-led previews, custom assets, and a preview-to-render workflow. Use for Remotion videos, identity films, commercial mockups, motion graphics, product promos, explainers, and video edits. metadata: short-description: Create ",
+      "origins": [
+        "codex"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 219,
+          "sha256": "597fe6b0a03e9106",
+          "text": true
+        },
+        "references/saas-product-film-workflow.md": {
+          "bytes": 7867,
+          "sha256": "8a739a35fa7a28da",
+          "text": true
+        },
+        "references/video-editing-skill-index.md": {
+          "bytes": 8960,
+          "sha256": "c1ac4c99c34dbc1b",
+          "text": true
+        },
+        "references/viral-format-analysis.md": {
+          "bytes": 6740,
+          "sha256": "b818f478de8d7070",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 47639,
+          "sha256": "83e82bc63ff52f67",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "remove-ai-marks": {
+      "frontmatter_name": "remove-ai-marks",
+      "description": "> Remove multi-vendor AI provenance marks: invisible Unicode (Layer A), statistical text watermarks via rewrite (Layer B, always offer), and C2PA/EXIF/XMP/container metadata on PNG/JPEG/WebP/SVG/PDF/DOCX/ODT/HTML/MD. Covers Claude, Gemini/SynthID-class, OpenAI provenance, and open-LLM sampling marks. Use when the user asks to strip watermarks, remove C2PA/Content Credentials, clean AI metadata, re",
+      "origins": [
+        "codex",
+        "grok"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "references/ethics.md": {
+          "bytes": 1868,
+          "sha256": "062afecad799b81a",
+          "text": true
+        },
+        "references/how-claude-marks.md": {
+          "bytes": 1645,
+          "sha256": "356eadd9f2141847",
+          "text": true
+        },
+        "references/mark-classes.md": {
+          "bytes": 3521,
+          "sha256": "06e5eaab7c7b5eea",
+          "text": true
+        },
+        "references/markdiffusion.md": {
+          "bytes": 3633,
+          "sha256": "b28ba70b60e34e9e",
+          "text": true
+        },
+        "references/removal-matrix.md": {
+          "bytes": 5317,
+          "sha256": "f3fbdb0443aa9a6e",
+          "text": true
+        },
+        "references/vendor-notes.md": {
+          "bytes": 5310,
+          "sha256": "333ce2c6a0dbef00",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 12144,
+          "sha256": "3f128e0cbd77ad17",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "web-animation-preview": {
+      "frontmatter_name": "web-animation-preview",
+      "description": "Derive a section-by-section motion blueprint from a static web design preview, or prototype and refine web animations in a runnable preview when requested. Use for React landing-page scroll narratives, parallax, pinned scenes, typography choreography, pointer-driven perspective, and 3D. metadata: short-description: Prototype and refine web motion with the user",
+      "origins": [
+        "codex"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 235,
+          "sha256": "65123a7c08e8c93a",
+          "text": true
+        },
+        "references/animation-blueprint-template.md": {
+          "bytes": 4432,
+          "sha256": "1bdd27c8c435f67e",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 9698,
+          "sha256": "71f5a0036835c238",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "web-builder-pro": {
+      "frontmatter_name": "web-builder-pro",
+      "description": "Design and build distinctive, premium websites by researching focused visual references and translating them into responsive, accessible frontend implementations. Use for new websites, landing pages, portfolios, or substantial visual redesigns built with React + Vite, Next.js, Angular, or Astro. metadata: short-description: Build premium websites with strong art direction",
+      "origins": [
+        "codex"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 198,
+          "sha256": "7123ab588a352d91",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 14362,
+          "sha256": "cfa9946ce6c52d6d",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "web-design-guidelines": {
+      "frontmatter_name": "web-design-guidelines",
+      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\". metadata: author: vercel version: \"1.0.0\" argument-hint: <file-or-pattern>",
+      "origins": [
+        "codex"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "SKILL.md": {
+          "bytes": 1231,
+          "sha256": "f4647ca866a3accf",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "web-preview-generator": {
+      "frontmatter_name": "web-preview-generator",
+      "description": "Create and iterate on visual web and landing-page design previews as a product designer using ImageGen. Use to explore product direction, page hierarchy, visual systems, and section concepts before implementation. metadata: short-description: Design landing-page previews with ImageGen",
+      "origins": [
+        "codex"
+      ],
+      "canonical_origin": "codex",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 238,
+          "sha256": "f5eb38cc217dd715",
+          "text": true
+        },
+        "references/visual-spec-template.md": {
+          "bytes": 2399,
+          "sha256": "42d4eef16184b107",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 14425,
+          "sha256": "d72378464a88b837",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "import-to-claude-code": {
+      "frontmatter_name": "import-to-claude-code",
+      "description": "Finish importing leftover config that `claude import` couldn't map automatically.",
+      "origins": [
+        "claude"
+      ],
+      "canonical_origin": "claude",
+      "files": {
+        "SKILL.md": {
+          "bytes": 1935,
+          "sha256": "af0838e5db95e725",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": []
+    },
+    "codex-resume": {
+      "frontmatter_name": "codex-resume",
+      "description": ">- Usa esta skill cuando el usuario escriba /resume, \"resume codex\", \"retomar codex\", \"abrir chat de codex\", \"ver mis chats de codex\" o cualquier variante. Muestra el listado de sesiones del perfil default de OpenAI Codex (excluyendo sesiones de AlphaAI) y permite elegir una para retomar con `codex resume`. También acepta un número o fragmento del título como argumento directo.",
+      "origins": [
+        "gemini"
+      ],
+      "canonical_origin": "gemini",
+      "files": {
+        "scripts/codex_resume.bat": {
+          "bytes": 43,
+          "sha256": "afa5aba6061227fe",
+          "text": true
+        },
+        "scripts/codex_resume.py": {
+          "bytes": 6018,
+          "sha256": "02af692253c67b3d",
+          "text": true
+        },
+        "SKILL.md": {
+          "bytes": 2687,
+          "sha256": "c7b45b7ed5c16c33",
+          "text": true
+        }
+      },
+      "divergent_origins": [],
+      "redacted": [
+        "SKILL.md"
+      ]
+    }
+  }
+}

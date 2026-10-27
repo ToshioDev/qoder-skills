@@ -1,0 +1,6 @@
+{
+  "<origen>/<skill>": [
+    ["palabra-que-no-debe-salir", "<marcador>"],
+    ["ruta\\-o\\-token\\.py\" \"secreto\"", "ruta.py\" \"<fragmento>\""]
+  ]
+}
