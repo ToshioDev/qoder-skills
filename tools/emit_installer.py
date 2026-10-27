@@ -204,11 +204,11 @@ def main():
 
     dest = HOME / "PROMPT-instalar-skills-qoder.md"
     text = "\n".join(parts)
-    dest.write_text(text, encoding="utf-8")
+    dest.write_text(text, encoding="utf-8", newline="\n")
 
     short = build_short(head, tail_raw, ZIP_ONLY, len(MANIFEST))
     short_dest = HOME / "PROMPT-corto-instalar-skills.md"
-    short_dest.write_text(short, encoding="utf-8")
+    short_dest.write_text(short, encoding="utf-8", newline="\n")
 
     zip_bytes = (HOME / "qoder-skills-portable.zip").stat().st_size
     print(f"skills inline: {len(MANIFEST) - len(ZIP_ONLY)}  files embedded: {count}")

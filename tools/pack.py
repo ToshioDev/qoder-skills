@@ -172,6 +172,7 @@ def main():
         )
         + "\n",
         encoding="utf-8",
+        newline="\n",
     )
 
     lines = [
@@ -198,14 +199,18 @@ def main():
             f"| {e['canonical_origin']} | {'+'.join(e['divergent_origins']) or '—'} "
             f"| {'+'.join(e['redacted']) or '—'} | {len(e['files'])} | {size/1024:.1f} |"
         )
-    (OUT / "MANIFEST.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (OUT / "MANIFEST.md").write_text(
+        "\n".join(lines) + "\n", encoding="utf-8", newline="\n"
+    )
     for src_name, dest_name in (
         ("PROMPT-instalar-skills-qoder.md", "INSTALL-QODER-SKILLS.md"),
         ("PROMPT-corto-instalar-skills.md", "INSTALL-RAPIDO.md"),
     ):
         prompt_src = HOME / src_name
         if prompt_src.is_file():
-            shutil.copyfile(prompt_src, OUT / dest_name)
+            # LF forzado: un prompt con CRLF dejaria cada linea embebida terminada en "\r"
+            # y la verificacion byte a byte del instalador fallaria en el destino.
+            (OUT / dest_name).write_bytes(prompt_src.read_bytes().replace(b"\r\n", b"\n"))
         else:
             print(f"aviso: aún no existe {src_name}; ejecuta pack.py otra vez")
 
