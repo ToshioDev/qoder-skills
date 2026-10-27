@@ -19,7 +19,7 @@ Se instalan pegándole un prompt al agente, no ejecutando un instalador.
    archivos contra `manifest.json` (bytes + sha256). Recarga la sesión para que indexe.
 
 Sin acceso al repo, usa `install/PROMPT-instalar-skills-qoder.md`: trae el texto de 28 de
-las 29 skills dentro del propio prompt (800 KiB). `ui-ux-pro-max` es la única que exige el
+las 29 skills dentro del propio prompt (783 KiB). `ui-ux-pro-max` es la única que exige el
 zip, por tamaño de su dataset.
 
 ## Contenido
