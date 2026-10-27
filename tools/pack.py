@@ -42,6 +42,7 @@ REDACTIONS = [
 # Private strings that must never leave this machine (real session titles, client names).
 # Loaded from redactions-local.json, which is gitignored; see redactions-local.example.json.
 LOCAL_REDACTIONS_FILE = pathlib.Path(__file__).resolve().parent / "redactions-local.json"
+ZIP_EXCLUDE_NAMES = {"redactions-local.json"}
 SKILL_REDACTIONS = {}
 if LOCAL_REDACTIONS_FILE.is_file():
     raw = json.loads(LOCAL_REDACTIONS_FILE.read_text(encoding="utf-8"))
@@ -207,6 +208,8 @@ def main():
                 continue
             if {"fragments", "__pycache__"} & set(p.relative_to(OUT).parts):
                 continue  # source of the prompt / bytecode cache, not needed on the target
+            if p.name in ZIP_EXCLUDE_NAMES:
+                continue  # private redaction inputs; the bundle ships the result, not the patterns
             zf.write(p, f"{OUT.name}/{p.relative_to(OUT).as_posix()}")
 
     print(f"skills: {len(manifest)}  text files: {file_count}")
