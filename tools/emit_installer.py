@@ -79,6 +79,30 @@ def zip_only_list(manifest, zip_only):
     return "\n".join(lines)
 
 
+def redaction_note(manifest):
+    marked = sorted(k for k, entry in manifest.items() if entry["redacted"])
+    if marked:
+        note = (
+            "- **Redactado (hay que rellenarlo):** el paquete no contiene rutas del equipo que "
+            "lo generó. Donde las hubo pone `$env:USERPROFILE` (PowerShell) o `$HOME`; las "
+            f"skills marcadas son {', '.join(f'`{k}`' for k in marked)} (ver "
+            "`manifest.json → skills[<nombre>].redacted`). Sustituye el placeholder por la ruta "
+            "donde instalaste la skill, no por la que te dé la gana: "
+            '`python "$SKILLS_DIR/codex-resume/scripts/codex_resume.py"`.\n'
+        )
+    else:
+        note = (
+            "- **Rutas:** el paquete no contiene rutas de ninguna cuenta personal; las skills "
+            "que invocan scripts ya usan formas portables (`$env:USERPROFILE` en PowerShell, "
+            "`$HOME` en Unix), así que no hay placeholders que rellenar.\n"
+        )
+    return note + (
+            "  `codex-resume` sí trae una dependencia externa: la CLI `codex` de OpenAI y "
+            "sesiones locales que leer. Si en el destino `codex` no está en el PATH, dilo "
+            "expresamente y no la des por instalada."
+    )
+
+
 def build_short(head, tail_raw, zip_only_names, skill_count):
     catalogue_free = head.split("## BLOQUE A")[0].split("\n", 2)[2]
     catalogue_free = catalogue_free.replace(
@@ -108,14 +132,13 @@ def build_short(head, tail_raw, zip_only_names, skill_count):
         .replace(short_sentence, replacement)
         .replace("{{ZIP_ONLY_LIST}}", zip_only_list(MANIFEST, zip_only_names))
     )
-    body = fill_counts(body)
+    body = fill_counts(body.replace("{{REDACTION_NOTE}}", redaction_note(MANIFEST)))
     return (
         f"# INSTALADOR RÁPIDO — {skill_count} skills (requiere qoder-skills-portable.zip)\n\n"
         + catalogue_free
         + "\n"
         + acquire
         + "\n2. **No hay zip:** no improvises. Pide `PROMPT-instalar-skills-qoder.md` (trae "
-        "las skills embebidas en el propio texto) o los comandos de origen del punto anterior.\n\n"
         "las skills embebidas en el propio texto) o los comandos de origen del punto anterior.\n\n"
         + body
     )
@@ -176,7 +199,7 @@ def main():
     tail_raw = (FRAG / "installer-tail.md").read_text(encoding="utf-8")
     tail = fill_counts(tail_raw).replace(
         "{{ZIP_ONLY_LIST}}", zip_only_list(MANIFEST, ZIP_ONLY)
-    )
+    ).replace("{{REDACTION_NOTE}}", redaction_note(MANIFEST))
     parts.append(tail)
 
     dest = HOME / "PROMPT-instalar-skills-qoder.md"

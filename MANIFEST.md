@@ -1,7 +1,7 @@
 # Skills bundle
 
 29 skills / 182 text files.
-Texto normalizado a LF y con rutas personales redactadas (`%USERPROFILE%`).
+Texto normalizado a LF. Sin redacciones: las skills fuente no contienen rutas de cuenta.
 Instalar con `INSTALL-QODER-SKILLS.md` (copia de `PROMPT-instalar-skills-qoder.md`).
 `pack.py` / `emit_installer.py` / `verify_prompt.py` son el tooling del equipo origen.
 
@@ -22,7 +22,7 @@ Instalar con `INSTALL-QODER-SKILLS.md` (copia de `PROMPT-instalar-skills-qoder.m
 | antislop-web | antislop-web | qoder+claude | qoder | — | — | 1 | 12.9 |
 | brand-visual-assets | brand-visual-assets | codex | codex | — | — | 1 | 14.3 |
 | clean-user-facing-text | clean-user-facing-text | codex+cursor | codex | — | — | 7 | 36.3 |
-| codex-resume | codex-resume | gemini | gemini | — | SKILL.md | 3 | 8.5 |
+| codex-resume | codex-resume | gemini | gemini | — | — | 3 | 8.5 |
 | frontend-design | frontend-design | qoder+claude | qoder | — | — | 1 | 8.1 |
 | gpt-taste | gpt-taste | codex | codex | — | — | 1 | 7.7 |
 | image-to-code | image-to-code | codex | codex | — | — | 1 | 37.3 |

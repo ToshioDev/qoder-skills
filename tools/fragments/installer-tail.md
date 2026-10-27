@@ -77,13 +77,7 @@ Dentro de los cuerpos hay rutas que NO existirán en la máquina destino. Tráta
   resuelve vacío y la ruta queda muerta. Sustitúyela por la ruta absoluta real donde
   instalaste la skill (`$SKILLS_DIR/ui-ux-pro-max/scripts/search.py`) en TODO el archivo,
   muestra el diff y prueba el comando antes de terminar.
-- **Redactado (hay que rellenarlo):** el paquete no contiene rutas del equipo que lo generó.
-  Donde las hubo pone `%USERPROFILE%` (Windows) o `$HOME`; las skills marcadas en
-  `manifest.json → skills[<nombre>].redacted` son las únicas afectadas, hoy por hoy
-  `codex-resume`. Sustituye el placeholder por la ruta donde instalaste la skill, no por la
-  que te dé la gana: `python "$SKILLS_DIR/codex-resume/scripts/codex_resume.py"`. Además
-  `codex-resume` depende de la CLI `codex` de OpenAI y de leer sesiones locales; si en el
-  destino `codex` no está en el PATH, avísalo y no la des por instalada.
+{{REDACTION_NOTE}}
 - **Cosmético (reporta, deja intacto salvo que el usuario pida lo contrario):** menciones a
   "Codex", "Claude", "Cursor" como destinatario de la skill — p. ej. `image-to-code`
   ("Elite website image-to-code skill for Codex"), `clean-user-facing-text` ("Use in Cursor

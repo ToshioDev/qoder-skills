@@ -82,8 +82,6 @@ Sigue este orden y detente en el primero que funcione:
 
 2. **No hay zip:** no improvises. Pide `PROMPT-instalar-skills-qoder.md` (trae las skills embebidas en el propio texto) o los comandos de origen del punto anterior.
 
-las skills embebidas en el propio texto) o los comandos de origen del punto anterior.
-
 ## Único hueco conocido: skills que solo viajan en el zip
 
 - `ui-ux-pro-max` — 73 archivos, 3.4 MiB (37 csv, 18 py, 15 json, 3 md).
@@ -163,13 +161,8 @@ Dentro de los cuerpos hay rutas que NO existirán en la máquina destino. Tráta
   resuelve vacío y la ruta queda muerta. Sustitúyela por la ruta absoluta real donde
   instalaste la skill (`$SKILLS_DIR/ui-ux-pro-max/scripts/search.py`) en TODO el archivo,
   muestra el diff y prueba el comando antes de terminar.
-- **Redactado (hay que rellenarlo):** el paquete no contiene rutas del equipo que lo generó.
-  Donde las hubo pone `%USERPROFILE%` (Windows) o `$HOME`; las skills marcadas en
-  `manifest.json → skills[<nombre>].redacted` son las únicas afectadas, hoy por hoy
-  `codex-resume`. Sustituye el placeholder por la ruta donde instalaste la skill, no por la
-  que te dé la gana: `python "$SKILLS_DIR/codex-resume/scripts/codex_resume.py"`. Además
-  `codex-resume` depende de la CLI `codex` de OpenAI y de leer sesiones locales; si en el
-  destino `codex` no está en el PATH, avísalo y no la des por instalada.
+- **Rutas:** el paquete no contiene rutas de ninguna cuenta personal; las skills que invocan scripts ya usan formas portables (`$env:USERPROFILE` en PowerShell, `$HOME` en Unix), así que no hay placeholders que rellenar.
+  `codex-resume` sí trae una dependencia externa: la CLI `codex` de OpenAI y sesiones locales que leer. Si en el destino `codex` no está en el PATH, dilo expresamente y no la des por instalada.
 - **Cosmético (reporta, deja intacto salvo que el usuario pida lo contrario):** menciones a
   "Codex", "Claude", "Cursor" como destinatario de la skill — p. ej. `image-to-code`
   ("Elite website image-to-code skill for Codex"), `clean-user-facing-text` ("Use in Cursor

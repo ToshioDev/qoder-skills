@@ -92,8 +92,9 @@ No incluyo `LICENSE` global por ese motivo.
 - Ninguna skill necesita MCP ni introduce credenciales; las que requieren APIs lo declaran
   (`agent-reach`, `playwright-cli`, despliegues de `05`/`07`).
 
-## Redacciones aplicadas
+## Rutas personales
 
-El bundle no contiene rutas de mi cuenta: se sustituyeron por `%USERPROFILE%` / `$HOME`, y
-los ejemplos con títulos de mis sesiones privadas se sustituyeron por marcadores. Están marcados con
-`redacted` en `manifest.json`. El texto de las skills no se reescribió nada más que eso.
+Las skills fuente no contienen rutas de cuenta personal ni títulos de sesiones:
+las que invocan scripts usan `$env:USERPROFILE` (PowerShell) o `$HOME`, así que
+funcionan tal cual en cualquier máquina. `manifest.json → redacted_file_count`
+es `0` y la columna `redacted` está vacía en todas las filas.

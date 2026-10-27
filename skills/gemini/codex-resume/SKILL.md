@@ -30,7 +30,7 @@ Activar cuando el usuario diga:
 Ejecuta el script sin argumentos para mostrar el menú completo:
 
 ```powershell
-python "%USERPROFILE%\.gemini\config\skills\codex-resume\scripts\codex_resume.py"
+python "$env:USERPROFILE\.gemini\config\skills\codex-resume\scripts\codex_resume.py"
 ```
 
 El script:
@@ -42,21 +42,21 @@ El script:
 
 ### Opción B — Resume directo por número o nombre
 
-Si el usuario ya sabe qué chat quiere (ej: "el chat 39" o "el de <proyecto>"):
+Si el usuario ya sabe qué chat quiere (ej: "el chat 39" o "el de facturas"):
 
 ```powershell
 # Por número
-python "%USERPROFILE%\.gemini\config\skills\codex-resume\scripts\codex_resume.py" 39
+python "$env:USERPROFILE\.gemini\config\skills\codex-resume\scripts\codex_resume.py" 39
 
 # Por fragmento de título
-python "%USERPROFILE%\.gemini\config\skills\codex-resume\scripts\codex_resume.py" "<fragmento>"
-python "%USERPROFILE%\.gemini\config\skills\codex-resume\scripts\codex_resume.py" "<otro-fragmento>"
+python "$env:USERPROFILE\.gemini\config\skills\codex-resume\scripts\codex_resume.py" "facturas"
+python "$env:USERPROFILE\.gemini\config\skills\codex-resume\scripts\codex_resume.py" "web"
 ```
 
 ### Opción C — Desde esta conversación en AGY
 
 Si el usuario no quiere abrir Codex nativo y prefiere continuar aquí en AGY:
-1. Lee el archivo exportado correspondiente en `%USERPROFILE%\codex_exported_chats\`
+1. Lee el archivo exportado correspondiente en `$env:USERPROFILE\codex_exported_chats\`
 2. Carga el contexto del proyecto (archivos modificados, prompts anteriores)
 3. Continúa el trabajo directamente desde AGY
 

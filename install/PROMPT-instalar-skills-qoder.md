@@ -11316,7 +11316,7 @@ def main():
 if __name__ == "__main__":
     main()
 ~~~~QODERSKILL
-FILE: codex-resume/SKILL.md bytes=2687 sha256=c7b45b7ed5c16c33
+FILE: codex-resume/SKILL.md bytes=2684 sha256=161e23b3fcdf573c
 ~~~~QODERSKILL
 ---
 name: codex-resume
@@ -11350,7 +11350,7 @@ Activar cuando el usuario diga:
 Ejecuta el script sin argumentos para mostrar el menú completo:
 
 ```powershell
-python "%USERPROFILE%\.gemini\config\skills\codex-resume\scripts\codex_resume.py"
+python "$env:USERPROFILE\.gemini\config\skills\codex-resume\scripts\codex_resume.py"
 ```
 
 El script:
@@ -11362,21 +11362,21 @@ El script:
 
 ### Opción B — Resume directo por número o nombre
 
-Si el usuario ya sabe qué chat quiere (ej: "el chat 39" o "el de <proyecto>"):
+Si el usuario ya sabe qué chat quiere (ej: "el chat 39" o "el de facturas"):
 
 ```powershell
 # Por número
-python "%USERPROFILE%\.gemini\config\skills\codex-resume\scripts\codex_resume.py" 39
+python "$env:USERPROFILE\.gemini\config\skills\codex-resume\scripts\codex_resume.py" 39
 
 # Por fragmento de título
-python "%USERPROFILE%\.gemini\config\skills\codex-resume\scripts\codex_resume.py" "<fragmento>"
-python "%USERPROFILE%\.gemini\config\skills\codex-resume\scripts\codex_resume.py" "<otro-fragmento>"
+python "$env:USERPROFILE\.gemini\config\skills\codex-resume\scripts\codex_resume.py" "facturas"
+python "$env:USERPROFILE\.gemini\config\skills\codex-resume\scripts\codex_resume.py" "web"
 ```
 
 ### Opción C — Desde esta conversación en AGY
 
 Si el usuario no quiere abrir Codex nativo y prefiere continuar aquí en AGY:
-1. Lee el archivo exportado correspondiente en `%USERPROFILE%\codex_exported_chats\`
+1. Lee el archivo exportado correspondiente en `$env:USERPROFILE\codex_exported_chats\`
 2. Carga el contexto del proyecto (archivos modificados, prompts anteriores)
 3. Continúa el trabajo directamente desde AGY
 
@@ -16939,13 +16939,8 @@ Dentro de los cuerpos hay rutas que NO existirán en la máquina destino. Tráta
   resuelve vacío y la ruta queda muerta. Sustitúyela por la ruta absoluta real donde
   instalaste la skill (`$SKILLS_DIR/ui-ux-pro-max/scripts/search.py`) en TODO el archivo,
   muestra el diff y prueba el comando antes de terminar.
-- **Redactado (hay que rellenarlo):** el paquete no contiene rutas del equipo que lo generó.
-  Donde las hubo pone `%USERPROFILE%` (Windows) o `$HOME`; las skills marcadas en
-  `manifest.json → skills[<nombre>].redacted` son las únicas afectadas, hoy por hoy
-  `codex-resume`. Sustituye el placeholder por la ruta donde instalaste la skill, no por la
-  que te dé la gana: `python "$SKILLS_DIR/codex-resume/scripts/codex_resume.py"`. Además
-  `codex-resume` depende de la CLI `codex` de OpenAI y de leer sesiones locales; si en el
-  destino `codex` no está en el PATH, avísalo y no la des por instalada.
+- **Rutas:** el paquete no contiene rutas de ninguna cuenta personal; las skills que invocan scripts ya usan formas portables (`$env:USERPROFILE` en PowerShell, `$HOME` en Unix), así que no hay placeholders que rellenar.
+  `codex-resume` sí trae una dependencia externa: la CLI `codex` de OpenAI y sesiones locales que leer. Si en el destino `codex` no está en el PATH, dilo expresamente y no la des por instalada.
 - **Cosmético (reporta, deja intacto salvo que el usuario pida lo contrario):** menciones a
   "Codex", "Claude", "Cursor" como destinatario de la skill — p. ej. `image-to-code`
   ("Elite website image-to-code skill for Codex"), `clean-user-facing-text` ("Use in Cursor

@@ -1,8 +1,7 @@
 {
   "schema": 3,
-  "redactions": [
-    "ruta personal del equipo origen sustituida por %USERPROFILE% / $HOME; los archivos marcados llevan 'redacted' en su entrada"
-  ],
+  "redactions": "ninguna: las skills fuente ya no contienen rutas de cuenta local",
+  "redacted_file_count": 0,
   "line_endings": "todos los archivos de texto normalizados a LF; los originales en la maquina fuente mezclado CRLF/LF",
   "skill_count": 29,
   "text_file_count": 182,
@@ -1278,15 +1277,13 @@
           "text": true
         },
         "SKILL.md": {
-          "bytes": 2687,
-          "sha256": "c7b45b7ed5c16c33",
+          "bytes": 2684,
+          "sha256": "161e23b3fcdf573c",
           "text": true
         }
       },
       "divergent_origins": [],
-      "redacted": [
-        "SKILL.md"
-      ]
+      "redacted": []
     }
   }
 }

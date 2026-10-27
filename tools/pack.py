@@ -32,10 +32,11 @@ FRONTMATTER = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 
 # Applied only to the bundle copy, so a public repo does not leak the local account name.
 # Patterns are bytes because blobs are read as bytes; the account name comes from the
-# environment so the tool itself is safe to publish.
+# environment so the tool itself is safe to publish. $env:USERPROFILE because the affected
+# snippets live in ```powershell fences, where %USERPROFILE% would not expand.
 LOCAL_USER = re.escape(getpass.getuser().encode())
 REDACTIONS = [
-    (re.compile(rb"[A-Za-z]:\\+Users\\+" + LOCAL_USER, re.IGNORECASE), b"%USERPROFILE%"),
+    (re.compile(rb"[A-Za-z]:\\+Users\\+" + LOCAL_USER, re.IGNORECASE), b"$env:USERPROFILE"),
     (re.compile(rb"(?:/c)?/Users/" + LOCAL_USER, re.IGNORECASE), b"$HOME"),
 ]
 
@@ -148,14 +149,18 @@ def main():
                 "redacted": redacted,
             }
 
+    n_redacted = sum(len(e["redacted"]) for e in manifest.values())
     (OUT / "manifest.json").write_text(
         json.dumps(
             {
                 "schema": 3,
-                "redactions": [
-                    "ruta personal del equipo origen sustituida por %USERPROFILE% / $HOME; "
-                    "los archivos marcados llevan 'redacted' en su entrada"
-                ],
+                "redactions": (
+                    "ruta personal del equipo origen sustituida por $env:USERPROFILE (Windows) "
+                    "o $HOME; los archivos marcados llevan 'redacted' en su entrada"
+                    if n_redacted
+                    else "ninguna: las skills fuente ya no contienen rutas de cuenta local"
+                ),
+                "redacted_file_count": n_redacted,
                 "line_endings": "todos los archivos de texto normalizados a LF; los "
                                 "originales en la maquina fuente mezclado CRLF/LF",
                 "skill_count": len(manifest),
@@ -173,7 +178,12 @@ def main():
         "# Skills bundle",
         "",
         f"{len(manifest)} skills / {file_count} text files.",
-        "Texto normalizado a LF y con rutas personales redactadas (`%USERPROFILE%`).",
+        "Texto normalizado a LF. "
+        + (
+            f"Rutas personales redactadas en {n_redacted} archivo(s) (columna `redacted`)."
+            if n_redacted
+            else "Sin redacciones: las skills fuente no contienen rutas de cuenta."
+        ),
         "Instalar con `INSTALL-QODER-SKILLS.md` (copia de `PROMPT-instalar-skills-qoder.md`).",
         "`pack.py` / `emit_installer.py` / `verify_prompt.py` son el tooling del equipo origen.",
         "",
