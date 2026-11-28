@@ -1,0 +1,3 @@
+interface:
+  display_name: "Reference-to-Asset Bridge"
+  short_description: "Audit, generate, and package UI-reference assets"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Animation Preview"
+  short_description: "Plan motion or prototype it live"
+  default_prompt: "Use $web-animation-preview to derive a motion blueprint from this design, or build a live preview if I ask."

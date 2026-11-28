@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remotion Video Pro"
+  short_description: "Create premium Remotion videos with frame-accurate GSAP motion"
+  default_prompt: "Use $remotion-video-pro to plan, animate, and render this video."

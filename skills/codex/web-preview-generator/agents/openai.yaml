@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Preview Generator"
+  short_description: "Design landing-page previews with ImageGen"
+  default_prompt: "Use $web-preview-generator to create visual landing-page concepts with ImageGen and guide my choice."
